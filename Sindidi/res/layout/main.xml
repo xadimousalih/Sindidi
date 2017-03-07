@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/li"
+    android:orientation="vertical" >
+
+    <!-- Included header.xml here -->
+
+    <ViewStub
+        android:id="@+id/vsHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/header"
+        android:layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="4dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_btn_histoire"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/android_logo_histoire"
+                android:onClick="onButtonClicker"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <!-- android:text="@string/Histoire" -->
+
+            <Button
+                android:id="@+id/main_btn_mbindumsbi"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/android__logo_mbindumserignebi"
+                android:onClick="onButtonClicker"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- android:text="@string/MbindoumSerigneBi" -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_btn_tny"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/android_logo_teerenaaryi"
+                android:onClick="onButtonClicker"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <!-- android:text="@string/TeereNaarYi" -->
+
+            <Button
+                android:id="@+id/main_btn_sar"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/android_logo_serigneabdourahmane"
+                android:onClick="onButtonClicker"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <!-- android:text="@string/SerigneAbdouahmane" -->
+
+        </LinearLayout>
+
+        <include layout="@layout/footer_layout" />
+    </LinearLayout>
+
+</LinearLayout>

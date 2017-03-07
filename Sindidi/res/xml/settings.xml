@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_user_profile" >
+        <EditTextPreference
+            android:key="prefUsername"
+            android:summary="@string/pref_user_name_summary"
+            android:title="@string/pref_user_name" />
+        <EditTextPreference
+            android:key="prefEmail"
+            android:summary="@string/pref_user_email_summary"
+            android:title="@string/pref_user_email" />
+        </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_update_setting" >
+<!--         <CheckBoxPreference -->
+<!--             android:defaultValue="true" -->
+<!--             android:key="prefLangAr" -->
+<!--             android:summary="@string/pref_langAr_summary" -->
+<!--             android:title="@string/pref_langAr" > -->
+<!--         </CheckBoxPreference> -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefLangFr"
+            android:summary="@string/pref_langFr_summary"
+            android:title="@string/pref_langFr" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefLangTr"
+            android:summary="@string/pref_langTr_summary"
+            android:title="@string/pref_langTr" >
+        </CheckBoxPreference>
+
+        <!-- <ListPreference -->
+        <!-- android:key="prefSyncFrequency" -->
+        <!-- android:entries="@array/syncFrequency" -->
+        <!-- android:summary="@string/pref_sync_frequency_summary" -->
+        <!-- android:entryValues="@array/syncFrequencyValues" -->
+        <!-- android:title="@string/pref_sync_frequency" /> -->
+    </PreferenceCategory>
+
+</PreferenceScreen>
